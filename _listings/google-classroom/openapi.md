@@ -4,7 +4,7 @@ x-collection-name: Google Classroom
 x-complete: 1
 info:
   title: Google Classroom
-  description: manages-classes-rosters-and-invitations-in-google-classroom
+  description: manages-classes-rosters-and-invitations-in-google-classroom-
   contact:
     name: Google
     url: https://google.com
