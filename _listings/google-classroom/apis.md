@@ -8,13 +8,13 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: Google Classroom
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-30"
+modified: "2018-08-30"
 url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Google Classroom API Get Courses
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Courses
+  x-api-slug: v1courses-get
   description: |-
     Returns a list of courses that the requesting user is permitted to view,
     restricted to those that match the request.
@@ -26,15 +26,16 @@ apis:
     * `NOT_FOUND` if any users specified in the query arguments do not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses
-  tags: Course
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-postman-collection
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1courses-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1courses-get-openapi.md
-- name: Google Classroom API Create Course
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Create Course
+  x-api-slug: v1courses-post
   description: |-
     Creates a course.
 
@@ -53,13 +54,14 @@ apis:
     already exists.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses
-  tags: Course
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1courses-post-openapi.md
-- name: Google Classroom API Get Aliases
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Aliases
+  x-api-slug: v1coursescourseidaliases-get
   description: |-
     Returns a list of aliases for a course.
 
@@ -70,13 +72,14 @@ apis:
     * `NOT_FOUND` if the course does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/aliases
-  tags: Alias
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidaliases-get-openapi.md
-- name: Google Classroom API Create Alias
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Create Alias
+  x-api-slug: v1coursescourseidaliases-post
   description: |-
     Creates an alias for a course.
 
@@ -91,13 +94,14 @@ apis:
       attempts to access a domain-scoped alias).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/aliases
-  tags: Alias
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidaliases-post-openapi.md
-- name: Google Classroom API Delete Alias
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Delete Alias
+  x-api-slug: v1coursescourseidaliasesalias-delete
   description: |-
     Deletes an alias of a course.
 
@@ -111,13 +115,14 @@ apis:
       attempts to delete a domain-scoped alias).
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/aliases/{alias}
-  tags: Alias
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidaliasesalias-delete-openapi.md
-- name: Google Classroom API Get Course Work
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Course Work
+  x-api-slug: v1coursescourseidcoursework-get
   description: |-
     Returns a list of course work that the requester is permitted to view.
 
@@ -132,13 +137,14 @@ apis:
     * `NOT_FOUND` if the requested course does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork
-  tags: Alias
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcoursework-get-openapi.md
-- name: Google Classroom API Create Course Work
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Create Course Work
+  x-api-slug: v1coursescourseidcoursework-post
   description: |-
     Creates course work.
 
@@ -160,13 +166,14 @@ apis:
         * AttachmentNotVisible
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork
-  tags: Course Work
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcoursework-post-openapi.md
-- name: Google Classroom API Get Student Submissions
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Student Submissions
+  x-api-slug: v1coursescourseidcourseworkcourseworkidstudentsubmissions-get
   description: |-
     Returns a list of student submissions that the requester is permitted to
     view, factoring in the OAuth scopes of the request.
@@ -184,13 +191,14 @@ apis:
     * `NOT_FOUND` if the requested course does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions
-  tags: Student Submission
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkcourseworkidstudentsubmissions-get-openapi.md
-- name: Google Classroom API Get Student Submission
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Student Submission
+  x-api-slug: v1coursescourseidcourseworkcourseworkidstudentsubmissionsid-get
   description: |-
     Returns a student submission.
 
@@ -202,13 +210,14 @@ apis:
     does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}
-  tags: Student Submission
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkcourseworkidstudentsubmissionsid-get-openapi.md
-- name: Google Classroom API Update Fields
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Update Fields
+  x-api-slug: v1coursescourseidcourseworkcourseworkidstudentsubmissionsid-patch
   description: |-
     Updates one or more fields of a student submission.
 
@@ -230,13 +239,14 @@ apis:
     does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}
-  tags: Field
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkcourseworkidstudentsubmissionsid-patch-openapi.md
-- name: Google Classroom API Modify Attachments
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Modify Attachments
+  x-api-slug: v1coursescourseidcourseworkcourseworkidstudentsubmissionsidmodifyattachments-post
   description: |-
     Modifies attachments of student submission.
 
@@ -258,13 +268,14 @@ apis:
     does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}:modifyAttachments
-  tags: Attachment
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkcourseworkidstudentsubmissionsidmodifyattachments-post-openapi.md
-- name: Google Classroom API Reclaim Student Submission
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Reclaim Student Submission
+  x-api-slug: v1coursescourseidcourseworkcourseworkidstudentsubmissionsidreclaim-post
   description: |-
     Reclaims a student submission on behalf of the student that owns it.
 
@@ -289,13 +300,14 @@ apis:
     does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}:reclaim
-  tags: Student Submission
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkcourseworkidstudentsubmissionsidreclaim-post-openapi.md
-- name: Google Classroom API Get Student Submission
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Student Submission
+  x-api-slug: v1coursescourseidcourseworkcourseworkidstudentsubmissionsidreturn-post
   description: |-
     Returns a student submission.
 
@@ -321,13 +333,14 @@ apis:
     does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}:return
-  tags: Student Submission
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkcourseworkidstudentsubmissionsidreturn-post-openapi.md
-- name: Google Classroom API Turn in Student Submission
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Turn in Student Submission
+  x-api-slug: v1coursescourseidcourseworkcourseworkidstudentsubmissionsidturnin-post
   description: |-
     Turns in a student submission.
 
@@ -351,13 +364,14 @@ apis:
     does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{courseWorkId}/studentSubmissions/{id}:turnIn
-  tags: Student Submission
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkcourseworkidstudentsubmissionsidturnin-post-openapi.md
-- name: Google Classroom API Delete Course Work
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Delete Course Work
+  x-api-slug: v1coursescourseidcourseworkid-delete
   description: |-
     Deletes a course work.
 
@@ -375,13 +389,14 @@ apis:
     * `NOT_FOUND` if no course exists with the requested ID.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{id}
-  tags: Course Work
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkid-delete-openapi.md
-- name: Google Classroom API Get Course Work
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Course Work
+  x-api-slug: v1coursescourseidcourseworkid-get
   description: |-
     Returns course work.
 
@@ -393,13 +408,14 @@ apis:
     * `NOT_FOUND` if the requested course or course work does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{id}
-  tags: Course Work
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkid-get-openapi.md
-- name: Google Classroom API Update Fields
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Update Fields
+  x-api-slug: v1coursescourseidcourseworkid-patch
   description: |-
     Updates one or more fields of a course work.
 
@@ -423,13 +439,14 @@ apis:
     does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/courseWork/{id}
-  tags: Field
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidcourseworkid-patch-openapi.md
-- name: Google Classroom API Get Students
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Students
+  x-api-slug: v1coursescourseidstudents-get
   description: |-
     Returns a list of students of this course that the requester
     is permitted to view.
@@ -440,13 +457,14 @@ apis:
     * `PERMISSION_DENIED` for access errors.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/students
-  tags: Student
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidstudents-get-openapi.md
-- name: Google Classroom API Add Student
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Add Student
+  x-api-slug: v1coursescourseidstudents-post
   description: |-
     Adds a user as a student of a course.
 
@@ -464,13 +482,14 @@ apis:
     course.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/students
-  tags: Student
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidstudents-post-openapi.md
-- name: Google Classroom API Delete Student
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Delete Student
+  x-api-slug: v1coursescourseidstudentsuserid-delete
   description: |-
     Deletes a student of a course.
 
@@ -482,13 +501,14 @@ apis:
     course does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/students/{userId}
-  tags: Student
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidstudentsuserid-delete-openapi.md
-- name: Google Classroom API Get Student
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Student
+  x-api-slug: v1coursescourseidstudentsuserid-get
   description: |-
     Returns a student of a course.
 
@@ -500,13 +520,14 @@ apis:
     course does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/students/{userId}
-  tags: Student
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidstudentsuserid-get-openapi.md
-- name: Google Classroom API Get Teachers
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Teachers
+  x-api-slug: v1coursescourseidteachers-get
   description: |-
     Returns a list of teachers of this course that the requester
     is permitted to view.
@@ -517,13 +538,14 @@ apis:
     * `PERMISSION_DENIED` for access errors.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/teachers
-  tags: Teacher
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidteachers-get-openapi.md
-- name: Google Classroom API Create Teacher
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Create Teacher
+  x-api-slug: v1coursescourseidteachers-post
   description: |-
     Creates a teacher of a course.
 
@@ -542,13 +564,14 @@ apis:
     course.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/teachers
-  tags: Teacher
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidteachers-post-openapi.md
-- name: Google Classroom API Delete Teacher
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Delete Teacher
+  x-api-slug: v1coursescourseidteachersuserid-delete
   description: |-
     Deletes a teacher of a course.
 
@@ -562,13 +585,14 @@ apis:
     of this course.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/teachers/{userId}
-  tags: Teacher
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidteachersuserid-delete-openapi.md
-- name: Google Classroom API Get Teacher
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Teacher
+  x-api-slug: v1coursescourseidteachersuserid-get
   description: |-
     Returns a teacher of a course.
 
@@ -580,13 +604,14 @@ apis:
     course does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{courseId}/teachers/{userId}
-  tags: Teacher
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursescourseidteachersuserid-get-openapi.md
-- name: Google Classroom API Delete Course
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Delete Course
+  x-api-slug: v1coursesid-delete
   description: |-
     Deletes a course.
 
@@ -597,13 +622,14 @@ apis:
     * `NOT_FOUND` if no course exists with the requested ID.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{id}
-  tags: Course
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursesid-delete-openapi.md
-- name: Google Classroom API Get Course
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Course
+  x-api-slug: v1coursesid-get
   description: |-
     Returns a course.
 
@@ -614,13 +640,14 @@ apis:
     * `NOT_FOUND` if no course exists with the requested ID.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{id}
-  tags: Course
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursesid-get-openapi.md
-- name: Google Classroom API Update Fields
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Update Fields
+  x-api-slug: v1coursesid-patch
   description: |-
     Updates one or more fields in a course.
 
@@ -635,13 +662,14 @@ apis:
         * CourseNotModifiable
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{id}
-  tags: Field
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursesid-patch-openapi.md
-- name: Google Classroom API Update Course
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Update Course
+  x-api-slug: v1coursesid-put
   description: |-
     Updates a course.
 
@@ -654,13 +682,14 @@ apis:
         * CourseNotModifiable
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/courses/{id}
-  tags: Course
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1coursesid-put-openapi.md
-- name: Google Classroom API Get Invitations
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Invitations
+  x-api-slug: v1invitations-get
   description: |-
     Returns a list of invitations that the requesting user is permitted to
     view, restricted to those that match the list request.
@@ -673,13 +702,14 @@ apis:
     * `PERMISSION_DENIED` for access errors.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/invitations
-  tags: Invitation
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1invitations-get-openapi.md
-- name: Google Classroom API Create Invitation
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Create Invitation
+  x-api-slug: v1invitations-post
   description: |-
     Creates an invitation. Only one invitation for a user and course may exist
     at a time. Delete and re-create an invitation to make changes.
@@ -695,13 +725,14 @@ apis:
     already exists.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/invitations
-  tags: Invitation
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1invitations-post-openapi.md
-- name: Google Classroom API Delete Invitation
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Delete Invitation
+  x-api-slug: v1invitationsid-delete
   description: |-
     Deletes an invitation.
 
@@ -712,13 +743,14 @@ apis:
     * `NOT_FOUND` if no invitation exists with the requested ID.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/invitations/{id}
-  tags: Invitation
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1invitationsid-delete-openapi.md
-- name: Google Classroom API Get Invitation
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Invitation
+  x-api-slug: v1invitationsid-get
   description: |-
     Returns an invitation.
 
@@ -729,13 +761,14 @@ apis:
     * `NOT_FOUND` if no invitation exists with the requested ID.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/invitations/{id}
-  tags: Invitation
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1invitationsid-get-openapi.md
-- name: Google Classroom API Accept Invitation
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Accept Invitation
+  x-api-slug: v1invitationsidaccept-post
   description: |-
     Accepts an invitation, removing it and adding the invited user to the
     teachers or students (as appropriate) of the specified course. Only the
@@ -753,13 +786,14 @@ apis:
     * `NOT_FOUND` if no invitation exists with the requested ID.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/invitations/{id}:accept
-  tags: Invitation
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1invitationsidaccept-post-openapi.md
-- name: Google Classroom API Get Guardian Invitations
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Guardian Invitations
+  x-api-slug: v1userprofilesstudentidguardianinvitations-get
   description: |-
     Returns a list of guardian invitations that the requesting user is
     permitted to view, filtered by the parameters provided.
@@ -779,13 +813,14 @@ apis:
       recognized, but Classroom has no record of that student.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/userProfiles/{studentId}/guardianInvitations
-  tags: Guardian Invitation
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1userprofilesstudentidguardianinvitations-get-openapi.md
-- name: Google Classroom API Create Guardian Invitation
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Create Guardian Invitation
+  x-api-slug: v1userprofilesstudentidguardianinvitations-post
   description: |-
     Creates a guardian invitation, and sends an email to the guardian asking
     them to confirm that they are the student's guardian.
@@ -819,13 +854,14 @@ apis:
       `Guardian` for this user.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/userProfiles/{studentId}/guardianInvitations
-  tags: Guardian Invitation
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1userprofilesstudentidguardianinvitations-post-openapi.md
-- name: Google Classroom API Get Guardian Invitation
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Guardian Invitation
+  x-api-slug: v1userprofilesstudentidguardianinvitationsinvitationid-get
   description: |-
     Returns a specific guardian invitation.
 
@@ -843,13 +879,14 @@ apis:
       requesting user does not have access to see that student.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/userProfiles/{studentId}/guardianInvitations/{invitationId}
-  tags: Guardian Invitation
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1userprofilesstudentidguardianinvitationsinvitationid-get-openapi.md
-- name: Google Classroom API Update Guardian Invitations
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Update Guardian Invitations
+  x-api-slug: v1userprofilesstudentidguardianinvitationsinvitationid-patch
   description: |-
     Modifies a guardian invitation.
 
@@ -871,13 +908,14 @@ apis:
       refer to a guardian invitation known to Classroom.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/userProfiles/{studentId}/guardianInvitations/{invitationId}
-  tags: Guardian Invitation
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1userprofilesstudentidguardianinvitationsinvitationid-patch-openapi.md
-- name: Google Classroom API Get Guardians
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Guardians
+  x-api-slug: v1userprofilesstudentidguardians-get
   description: |-
     Returns a list of guardians that the requesting user is permitted to
     view, restricted to those that match the request.
@@ -901,13 +939,14 @@ apis:
       recognized, but Classroom has no record of that student.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/userProfiles/{studentId}/guardians
-  tags: Guardian
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1userprofilesstudentidguardians-get-openapi.md
-- name: Google Classroom API Delete Guardian
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Delete Guardian
+  x-api-slug: v1userprofilesstudentidguardiansguardianid-delete
   description: |-
     Deletes a guardian.
 
@@ -929,13 +968,14 @@ apis:
       student with the provided `guardian_id`.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/userProfiles/{studentId}/guardians/{guardianId}
-  tags: Guardian
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1userprofilesstudentidguardiansguardianid-delete-openapi.md
-- name: Google Classroom API Get Guardian
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get Guardian
+  x-api-slug: v1userprofilesstudentidguardiansguardianid-get
   description: |-
     Returns a specific guardian.
 
@@ -954,13 +994,14 @@ apis:
       student that matches the provided `guardian_id`.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/userProfiles/{studentId}/guardians/{guardianId}
-  tags: Guardian
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1userprofilesstudentidguardiansguardianid-get-openapi.md
-- name: Google Classroom API Get User
-  x-api-slug: google-classroom-api
+- name: Google Classroom - Get User
+  x-api-slug: v1userprofilesuserid-get
   description: |-
     Returns a user profile.
 
@@ -971,24 +1012,17 @@ apis:
     access errors.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
   humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com////v1/userProfiles/{userId}
-  tags: User
+  baseURL: ://classroom.googleapis.com//
+  tags: Education, Google APIs, Stack Network, API Service Provider, API Provider,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/v1userprofilesuserid-get-openapi.md
-- name: Google Classroom API
-  x-api-slug: google-classroom-api
-  description: Google Classroom is mission control for your classes. As a free service
-    for teachers and students, you can create classes, distribute assignments, send
-    feedback, and see everything in one place. Instant. Paperless. Easy.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-classroom.png
-  humanURL: https://classroom.google.com/
-  baseURL: ://classroom.googleapis.com//
-  tags: Google Classroom
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/google-classroom/master/_listings/google-classroom/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://google.civic.information.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://google.classroom.stack.network
 - type: x-button
   url: https://developers.google.com/classroom/guides/sharebutton
 - type: x-developer
